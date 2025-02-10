@@ -1,3 +1,4 @@
+
 // コンポーネント化
 // 引数で分割代入を使う方法
 export const ColorfulMessage = ({ color, children }) => {
