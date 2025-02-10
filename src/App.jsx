@@ -17,7 +17,8 @@ import { ColorfulMessage } from "./componets/ColorfulMessage";
 
   // 本関数内で使う関数をここで定義する
   const onClickCountUp = () => {
-    setNum(num + 1);
+    // prevには現在のnumが入る（バッチ処理）
+    setNum((prev) => prev + 1);
   };
 
   // {} はJavaScriptで書くよ、という宣言。
