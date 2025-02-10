@@ -2,6 +2,7 @@
 // コンポーネント化
 // 引数で分割代入を使う方法
 export const ColorfulMessage = ({ color, children }) => {
+    console.log("--ColorfulMessage--");
     // cssのオブジェクト
     const contentStyleA = {
         // プロパティと引数名が同名なら省略できので
