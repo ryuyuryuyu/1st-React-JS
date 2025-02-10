@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ColorfulMessage } from "./componets/ColorfulMessage";
+import ChangeMsgColor from "./componets/ColorfulMessage";
 /*
   useState：
     コンポーネントの状態・情報のこと。
@@ -56,8 +56,8 @@ import { ColorfulMessage } from "./componets/ColorfulMessage";
   return (
     <>
       <h1 style={{ color: "red"}}>こんにちは</h1>
-      <ColorfulMessage color="green">お元気ですか？</ColorfulMessage>
-      <ColorfulMessage color="orange">元気です</ColorfulMessage>
+      <changeMsgColor color="green">お元気ですか？</changeMsgColor>
+      <changeMsgColor color="orange">元気です</changeMsgColor>
       <button onClick={onClickCountUp}>カウントアップ</button>
       <p>{num}</p>
       <button onClick={onClickToggle}>on/off</button>

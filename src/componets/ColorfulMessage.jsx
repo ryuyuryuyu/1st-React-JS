@@ -1,7 +1,7 @@
 
 // コンポーネント化
 // 引数で分割代入を使う方法
-export const ColorfulMessage = ({ color, children }) => {
+const ColorfulMessage = ({ color, children }) => {
     console.log("--ColorfulMessage--");
     // cssのオブジェクト
     const contentStyleA = {
@@ -16,6 +16,11 @@ export const ColorfulMessage = ({ color, children }) => {
         <p style={contentStyleA}>{children}</p>
     )    
 }
+/*
+    デフォルトエクスポート：
+        呼び出す側は「{}」で定義せずに済み、別名をつけることが可能になる。
+*/
+export default ColorfulMessage;
 
 // // 関数内で「props」を書きたくないとき
 // export const ColorfulMessage = (props) => {
